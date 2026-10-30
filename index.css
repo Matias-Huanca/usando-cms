@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  background-image: url(./puntitos.png);
+  background-blend-mode: multiply;
+  background-color: #b9b9b9;
+}
+
+.portfolio {
+  /* border: solid red; */
+}
+.portfolio-title {
+  /* border: solid 5px green; */
+  font-size: 38px;
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+.portfolio-description {
+  /* border: solid blue; */
+  font-size: 24px;
+  margin: 7px 0 0 0;
+  text-align: center;
+}
+.portfolio-content {
+  /* border: solid violet; */
+  margin-top: 20px;
+  padding: 40px;
+  display: grid;
+  gap: 40px;
+}
+@media (min-width: 960px) {
+  .portfolio-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.portfolio-card {
+  border: solid 4px black;
+  border-radius: 6px;
+}
+
+.portfolio-img {
+  /* border: solid greenyellow; */
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+}
+.portfolio-card-content {
+  /* border: solid darkmagenta; */
+  padding: 20px;
+}
+
+.portfolio-card-title {
+  /* border: solid darkcyan; */
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+}
+.portfolio-card-text {
+  /* border: solid aquamarine; */
+  margin: 0;
+  text-align: center;
+}
+.portfolio-card-link {
+  /* border: solid red; */
+  color: #51aff3;
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+}
